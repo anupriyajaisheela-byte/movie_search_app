@@ -12,8 +12,8 @@ searchBtn.addEventListener('click', () => {
 });
 
 async function fetchMovies(searchTerm) {
-  const apiKey = 'YOUR_API_KEY'; // ← Replace with your actual OMDb API key
-  const url = `https://www.omdbapi.com/?s=${encodeURIComponent(searchTerm)}&apikey=${apiKey}`;
+  const apiKey = '370fa229'; // ← Replace with your actual OMDb API key
+  const url = `http://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}&s=${encodeURIComponent(searchTerm)}`;
 
   try {
     const res = await fetch(url);
